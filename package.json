@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-  "build": "npm run build"
+  "build": "npm run build",
+  "start": "node backend/server.js"
   },
   "author": "",
   "license": "ISC",
