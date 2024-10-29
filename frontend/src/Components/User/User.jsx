@@ -5,7 +5,7 @@ const User = ({ userId, name, avatar }) => {
   return (
     <Link to={`/user/${userId}`} className="homeUser">
       <img src={avatar} alt={name} />
-      <Typography>{name}</Typography>
+      <Typography style={{color:"white"}}>{name}</Typography>
     </Link>
   );
 };

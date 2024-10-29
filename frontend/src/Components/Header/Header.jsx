@@ -17,14 +17,14 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/" onClick={() => setTab("/")}>
-        {tab === "/" ? <Home style={{ color: "black" }} /> : <HomeOutlined />}
+        {tab === "/" ? <Home style={{ color: "white" }} /> : <HomeOutlined style={{ color: "white" }} />}
       </Link>
 
       <Link to="/newpost" onClick={() => setTab("/newpost")}>
         {tab === "/newpost" ? (
           <Add style={{ color: "black" }} />
         ) : (
-          <AddOutlined />
+          <AddOutlined style={{ color: "white" }} />
         )}
       </Link>
 
@@ -32,7 +32,7 @@ const Header = () => {
         {tab === "/search" ? (
           <Search style={{ color: "black" }} />
         ) : (
-          <SearchOutlined />
+          <SearchOutlined style={{ color: "white" }} />
         )}
       </Link>
 
@@ -40,7 +40,7 @@ const Header = () => {
         {tab === "/account" ? (
           <AccountCircle style={{ color: "black" }} />
         ) : (
-          <AccountCircleOutlined />
+          <AccountCircleOutlined style={{ color: "white" }} />
         )}
       </Link>
     </div>

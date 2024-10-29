@@ -65,6 +65,7 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 2.5em;
+    gap: 1rem;
 }
 
 .button1,
@@ -89,4 +90,9 @@
 
 .button3:hover {
     background-color: red;
+}
+
+.button3 {
+    position: relative;
+    left: 3.27rem;
 }

@@ -77,7 +77,7 @@ const Home = () => {
             />
           ))
         ) : (
-          <Typography>No Users Yet</Typography>
+          <Typography color={"white"}>No Users Yet</Typography>
         )}
       </div>
     </div>

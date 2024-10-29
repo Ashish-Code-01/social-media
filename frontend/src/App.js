@@ -19,6 +19,7 @@ import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(loadUser());
   }, [dispatch]);
@@ -27,53 +28,22 @@ function App() {
 
   return (
     <Router>
-      {isAuthenticated && <Header />}
-
-      <Routes>
-        <Route path="/" element={isAuthenticated ? <Home /> : <Login />} />
-        <Route
-          path="/account"
-          element={isAuthenticated ? <Account /> : <Login />}
-        />
-
-        <Route
-          path="/register"
-          element={isAuthenticated ? <Account /> : <Register />}
-        />
-
-        <Route
-          path="/newpost"
-          element={isAuthenticated ? <NewPost /> : <Login />}
-        />
-
-        <Route
-          path="/update/profile"
-          element={isAuthenticated ? <UpdateProfile /> : <Login />}
-        />
-        <Route
-          path="/update/password"
-          element={isAuthenticated ? <UpdatePassword /> : <Login />}
-        />
-
-        <Route
-          path="/forgot/password"
-          element={isAuthenticated ? <UpdatePassword /> : <ForgotPassword />}
-        />
-
-        <Route
-          path="/password/reset/:token"
-          element={isAuthenticated ? <UpdatePassword /> : <ResetPassword />}
-        />
-
-        <Route
-          path="/user/:id"
-          element={isAuthenticated ? <UserProfile /> : <Login />}
-        />
-
-        <Route path="search" element={<Search />} />
-
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={isAuthenticated ? <Home /> : <Login />} />
+          <Route path="/account" element={isAuthenticated ? <Account /> : <Login />} />
+          <Route path="/register" element={isAuthenticated ? <Account /> : <Register />} />
+          <Route path="/newpost" element={isAuthenticated ? <NewPost /> : <Login />} />
+          <Route path="/update/profile" element={isAuthenticated ? <UpdateProfile /> : <Login />} />
+          <Route path="/update/password" element={isAuthenticated ? <UpdatePassword /> : <Login />} />
+          <Route path="/forgot/password" element={isAuthenticated ? <UpdatePassword /> : <ForgotPassword />} />
+          <Route path="/password/reset/:token" element={isAuthenticated ? <UpdatePassword /> : <ResetPassword />} />
+          <Route path="/user/:id" element={isAuthenticated ? <UserProfile /> : <Login />} />
+          <Route path="search" element={<Search />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        {isAuthenticated && <Header />}
+      </div>
     </Router>
   );
 }

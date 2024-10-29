@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .header > a {
@@ -15,8 +16,9 @@
   color: rgba(0, 0, 0, 0.445);
 }
 
+
 .header > a > svg:hover {
-  color: black;
+  color: gray;
   transform: scale(1.2);
 }
 

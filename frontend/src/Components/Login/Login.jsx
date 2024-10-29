@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../../Actions/User";
@@ -41,7 +40,7 @@ const Login = () => {
           </svg>
           <input
             autoComplete="off"
-            placeholder="Username"
+            placeholder="E-mail"
             className="input-field"
             type="text"
             value={email}
