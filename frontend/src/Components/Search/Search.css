@@ -1,55 +1,67 @@
 .search {
   height: 100vh;
-  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
-
+  background-image: linear-gradient(to right, rgb(26, 25, 25), rgb(69, 68, 68));
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2vmax;
-  box-sizing: border-box;
+  padding: 0rem .8rem .8rem .8rem;
 }
 
 .searchForm {
-  background-color: white;
-  height: 100%;
-  width: 50%;
+  background-color: black;
+  height: 86vh;
+  width: 95%;
+  max-width: 500px;
   border-radius: 30px;
-  box-sizing: border-box;
   padding: 2vmax;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.searchForm > input {
-  box-sizing: border-box;
-  padding: 1vmax 2vmax;
-  width: 80%;
-  border-radius: 40px;
-  border: 1px solid #ccc;
-  margin: 2vmax;
-  font: 100 1.2rem "Roboto", sans-serif;
+.field {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  border-radius: 25px;
+  background-color: #171717;
+  padding: 0.5em;
+  margin: 2vmax 0;
+}
+
+.input-field {
+  background: none;
+  border: none;
   outline: none;
+  width: 100%;
+  color: #d3d3d3;
+  padding: 0.5em;
 }
 
 .searchResults {
   width: 100%;
-  height: 100%;
+  padding: 2vmax 0;
+  margin: 2vmax 0;
   overflow-y: auto;
-  padding: 2vmax;
-  box-sizing: border-box;
-  margin: 2vmax;
 }
 
 @media screen and (max-width: 600px) {
   .searchForm {
-    width: 100%;
+    width: 90%;
+    padding: 1.5rem;
   }
 
-  .searchForm > input {
-    padding: 4vw 8vw;
-    margin: 2vmax;
-    font: 100 1.2rem "Roboto", sans-serif;
-    margin: 4vw;
+  .input-field {
+    font: 100 1rem "Roboto", sans-serif;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchForm {
+    width: 95%;
+  }
+
+  .input-field {
+    font: 100 0.9rem "Roboto", sans-serif;
   }
 }
