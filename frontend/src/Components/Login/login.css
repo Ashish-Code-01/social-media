@@ -11,12 +11,11 @@
     width: max-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 0.4em;
     background-color: #171717;
-    border-radius: 25px; 
+    border-radius: 25px;
     transition: .4s ease-in-out;
 }
 
@@ -27,7 +26,7 @@
 
 #heading {
     text-align: center;
-    margin: 2em;
+    margin: 1em;
     color: rgb(255, 255, 255);
     font-size: 1.2em;
 }
@@ -44,6 +43,7 @@
     color: white;
     background-color: #171717;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    margin: .5rem 0;
 }
 
 .input-icon {
@@ -78,7 +78,7 @@
     transition: .4s ease-in-out;
     background-color: #252525;
     color: white;
-    
+
 }
 
 .button1:hover,
@@ -94,5 +94,5 @@
 
 .button3 {
     position: relative;
-    left: 3.27rem;
+    left: 3.5rem;
 }

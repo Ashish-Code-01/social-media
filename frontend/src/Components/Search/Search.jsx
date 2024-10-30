@@ -37,7 +37,7 @@ const Search = () => {
           />
         </div>
 
-        <Button disabled={loading} type="submit" style={{background:"black", border:"1px solid blue", borderRadius:"1rem", padding:".6rem 3rem"}}>
+        <Button disabled={loading} type="submit" style={{background:"black", border:"1px solid blue", borderRadius:"1rem", padding:".6rem 3rem" , marginTop:"1rem"}}>
           Search
         </Button>
 

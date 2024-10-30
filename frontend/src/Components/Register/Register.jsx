@@ -107,7 +107,7 @@ const SignUp = () => {
             Already have an account? Login
           </Typography>
         </Link>
-        <div className=" .btn" style={{ border: "1px solid white", textAlign: "center", borderRadius: "2rem" }}>
+        <div className=" .btn" style={{ border: "1px solid blue", textAlign: "center", borderRadius: "2rem", color: "blue" }}>
           <Button disabled={loading} type="submit" className="singup">
             Sign Up
           </Button>
